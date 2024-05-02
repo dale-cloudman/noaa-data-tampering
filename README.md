@@ -59,7 +59,7 @@ The data that fails the *"quality assurance reviews"* is removed (set to missing
 
 > All GHCN-Daily stations are routinely processed through a suite of logical, serial, and spatial quality assurance reviews to identify erroneous observations.  For nClimDiv, all such data were set to missing before computing monthly values, which in turn were subjected to additional serial and spatial checks to eliminate residual outliers.
 
-And this removed data is then filled-in using precisely the same algorithms as in the USHCN data set:
+This removed data is then filled-in using precisely the same algorithms as in the USHCN data set (which also itself drops values it deems inhomogeneous):
 
 > For temperature, bias adjustments were computed to account for historical changes in observation time, **station location, temperature instrumentation, and siting conditions**.  Changes in observation time are only problematic for the COOP network whereas **changes in station location and instrumentation occur in almost all surface networks**.   As in the U.S. Historical Climatology Network version 2.5, the method of Karl et al. (1986) was applied to remove the observation time bias from the COOP network, and the **pairwise method** of Menne and Williams (2009) was used to address **changes in station location and instrumentation in all networks**.
 
